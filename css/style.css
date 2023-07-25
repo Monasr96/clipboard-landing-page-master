@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@media(max-width:767px){
+    p{
+        font-size: 0.86rem;
+        line-height: 1.5;
+        padding-top: 1rem;
+    }
+    .btn{
+        margin: 1rem 0;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    scroll-behavior:smooth;
+}
+/*utilities*/
+section{
+    margin-top: 8rem;
+}
+header{
+    background-image: url(../img/bg-header-desktop.png);
+    padding-top:100px ;
+    background-repeat: no-repeat;
+}
+h1{
+    padding: 1rem;
+    color: hsl(210, 10%, 33%)
+}
+h2{
+    padding: 1rem;
+    color: hsl(210, 10%, 33%)
+}
+p{
+    color: hsl(210, 10%, 33%);
+    opacity: 70%;
+    padding-bottom: 4rem;
+    line-height: 2;
+}
+.subheader{
+    margin: auto;
+    width: 60%;
+}
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: 2px solid snow;
+    border-radius: 30px;
+    color: hsl(210, 10%, 33%) ;;
+    cursor: pointer;
+    box-shadow: 0 0 2px;
+}
+.btn:hover{
+    color:#fff;
+}
+.ios-btn{
+    background-color: hsl(171, 66%, 44%);
+}
+.mac-btn{
+    background-color: hsl(233, 100%, 69%);
+}
+.container1{
+    display:grid;
+    grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+    grid-template-areas: 
+        "pic data"
+        "pic data"
+        "pic data";
+    column-gap: 80px;
+}
+.container1 img{
+    grid-area: pic;
+    
+}
+.row1-3{
+    grid-area: data;
+    text-align: left;
+    padding-top: 1rem;
+    padding-right: 7rem;
+    line-break: 15px;
+    line-height: 2;
+} 
+@media (max-width:767px){
+    .container1{
+        display:grid;
+        grid-template-columns: repeat(autofill, minmax(300px, auto));
+        grid-template-areas: 
+            "pic"
+            "data"
+            "data"
+            "data";
+        justify-content: center;}
+    .container1 img{
+        grid-area: pic;
+            width: 70%;
+            margin: auto;
+        }
+    .row1-3{
+            width: 90%;
+            margin: auto;
+            grid-area: data;
+            text-align: center;
+            padding: 0.5rem 2rem;}
+}
+.container2{
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+    grid-template-areas: 
+        "head head head"
+        "cont1 cont2 cont3";
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+}
+.container2 .head{
+    grid-area: head;
+}
+.container2 .col1-1{
+    grid-area: cont1;
+}
+.container2 .col1-2{
+    grid-area: cont2;
+}
+.container2 .col1-3{
+    grid-area: cont3;
+}
+.cont img{
+    width: 40px;
+    height: 60px;
+    padding-bottom: 1.5rem;
+}
+.cont p{
+    padding: 1.5rem 0 0 0;
+}
+@media(max-width:767px){
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(autofill, minmax(300px, auto));
+        grid-template-areas: 
+            "head "
+            "cont1"
+            "cont2"
+            "cont3";
+        gap:10px
+    }
+    .devices-img{
+        width: 70%;
+        margin: auto;
+    }
+    .container2 div{
+        width: 70%;
+        margin: 3rem auto 0 auto;
+        padding: 0;
+    }
+}
+.logos .row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 10rem;
+    flex-wrap: wrap;
+}
+@media(max-width:767px){
+    .logos .row{
+        height: 700px;
+    }
+}
+.store p{
+    line-height: 1.5;
+}
+@media(max-width:767px){
+    .store{
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 10rem 2rem 10rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    background-color: #eee;
+}
+footer div{
+    padding-right: 4rem;
+}
+a{
+    text-decoration: none;
+    color:hsl(210, 10%, 33%)
+}
+a:hover{
+    color:hsl(171, 66%, 44%)
+}
+.social img{
+    width: 20px;
+}
+.social a{ 
+    padding: 1rem;
+}
+footer img{
+    width: 50px;
+}
+@media(max-width:767px){
+    footer{
+        padding: 0 ;
+        }
+        footer div{
+            padding-right:0;
+            width: 70%;
+            margin: auto;
+            padding-top: 1rem;
+        }
+}
+
