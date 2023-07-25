@@ -211,6 +211,7 @@ footer img{
 @media(max-width:767px){
     footer{
         padding: 0 ;
+        hieght: 450px
         }
         footer div{
             padding-right:0;
